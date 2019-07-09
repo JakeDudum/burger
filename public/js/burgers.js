@@ -1,10 +1,15 @@
 $(document).ready(function () {
 
     $(".eat").on("click", function (event) {
-        var id = $(this).data("id");
+        var id = $(this).attr("id");
+
+        var eat = {
+            devour: true
+        };
 
         $.ajax("/api/burgers/" + id, {
-            type: "PUT"
+            type: "PUT",
+            data: eat
         }).then(
             function () {
                 location.reload();
