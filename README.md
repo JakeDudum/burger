@@ -8,7 +8,7 @@ A simple and straight forward site where you can EAT DA BURGER! Users can add bu
 [Burger](https://github.com/JakeDudum/burger)
 
 # Link to Deployed Site (Heroku)
-[Burger Town](https://bloc-chesterfield-78508.herokuapp.com/)
+[Burger Town](https://boiling-eyrie-34449.herokuapp.com/)
 
 # Built With
 - [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
