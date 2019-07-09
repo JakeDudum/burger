@@ -1,0 +1,164 @@
+body {
+    background-color: gold;
+    text-align: center;
+}
+
+#not-devoured {
+    position: absolute;
+    top: 10vh;
+    left: 1vw;
+    width: 30vw;
+}
+
+#devoured {
+    position: absolute;
+    top: 10vh;
+    right: 1vw;
+    width: 30vw;
+}
+
+#form {
+    position: absolute;
+    top: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 30vw;
+}
+
+h1 {
+    font-size: 5vmin;
+}
+
+h2 {
+    font-size: 3.5vmin;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.5vmin;
+}
+
+#burgers {
+    width: 30vw;
+    height: auto;
+}
+
+.eaten {
+    background-color: grey;
+    padding: 0.5vh 0vh;
+    margin: 1vh 0vh;
+}
+
+.not-eaten {
+    background-color: rgb(241, 70, 70);
+    padding: 0.5vh 0vh;
+    margin: 1vh 0vh;
+}
+
+#eaten-list {
+    background-color: #535353;
+}
+
+#not-eaten-list {
+    background-color: orange;
+}
+
+.form-group {
+    margin-bottom: 2vh;
+}
+
+.button {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1vmax;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,orange,red);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+ 0%{
+   transform:translateX(-100%);
+ }
+ 100%{
+   transform:translateX(100%);
+ }
+}
+.button span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom,orange,red);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+ 0%{
+   transform:translateY(-100%);
+ }
+ 100%{
+   transform:translateY(100%);
+ }
+}
+
+.button span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left,orange,red);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+ 0%{
+   transform:translateX(100%);
+ }
+ 100%{
+   transform:translateX(-100%);
+ }
+}
+
+.button span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top,orange,red);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+ 0%{
+   transform:translateY(100%);
+ }
+ 100%{
+   transform:translateY(-100%);
+ }
+}
