@@ -24,13 +24,17 @@ $(document).ready(function () {
             burger_name: $("#burger").val().trim()
         };
 
-        $.ajax("/api/burgers", {
-            type: "POST",
-            data: newBurger
-        }).then(
-            function () {
-                location.reload();
-            }
-        );
+        if (newBurger != "") {
+            $.ajax("/api/burgers", {
+                type: "POST",
+                data: newBurger
+            }).then(
+                function () {
+                    location.reload();
+                }
+            );
+        } else {
+            alert("Please enter a non-empty response.");
+        }
     });
 });
